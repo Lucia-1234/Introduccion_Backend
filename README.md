@@ -3,11 +3,68 @@
 
 
 ## Proceso de Configuración:
-### • ¿Qué pasos realizaste desde la creación de la carpeta hasta la ejecución delservidor?
+### ¿Qué pasos realizaste desde la creación de la carpeta hasta la ejecución del servidor?
 El paso a paso que realice fue: 
 1. Crear una carpeta llamada api
 2. Verifique que node estuviera instalado en el sistema, verifique la version
   ```
-
+    node -v
   ```
 3. Verifique que npm estuviera instalado y actualice a la ultiva version 
+  ```
+    npm -v
+    npm install -g npm
+  ```
+4. Se inicializo el proyecto
+  ```
+    npm init -y
+  ```
+5. Instalacion de Express
+  ```
+    npm install express
+  ```
+6. Cree el archivo index. js 
+7. Configuracion del servidor 
+
+    • Importa el framework.
+
+    • Crea una instancia de aplicación.
+
+    • Define un puerto.
+
+    • Escucha solicitudes.
+  ```
+    const express = require('express')
+    const app = express()
+    const port = 3000
+
+    app.get('/', (req, res) => {
+      res.send('Hello World!')
+    })
+
+    app.listen(port, () => {
+      console.log(`Example app listening on port ${port}`)
+    })
+  ```
+10. Se cambio el scrip en packaje.json para poder ejecutar
+  ```
+    npm run dev
+  ```
+
+9. Se generaron las rutas 
+
+    • / → Mensaje de bienvenida.
+
+    • /saludo → Respuesta personalizada.
+
+    • /usuarios → Información de usuarios.
+
+
+### ¿Qué función cumple el archivo package.json?
+
+La funcion del archivo package.json ayuda a la configuracion del proyecto, contiene información como nombre, versión, autor y licencia, gestiona dependencias para que el proyecto funcione y se pueda instalar con npm install, nos permite modificar comandos como "dev", "start", "test", que se ejecutan con npm run.
+
+
+### ¿Qué ocurre al ejecutar npm install?
+
+Al ejecutar npm install se descargan las librerías necesarias desde el registro oficial de npm, instala físicamente las dependencias en la carpeta node_modules, que contiene todo el código de terceros que tu proyecto necesita y genera el archivo package-lock.json creando o actualizando este archivo para registrar las versiones exactas de cada dependencia, garantizando que el proyecto sea reproducible en otros entornos.
