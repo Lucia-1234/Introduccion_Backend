@@ -93,3 +93,16 @@ La diferencia de las rutas es que cada una muestra informacion diferente dependi
 
   Request: Contiene toda la información que el cliente envía al servidor.
   Response: Permite al servidor enviar una respuesta al cliente
+
+## Reflexión Técnica 
+### ¿Qué dificultades encontraste?
+
+Gracias a la especifica explicacion del instructor y el paso a paso definido pude lograr completra la actividad sin ningun inconveniente 
+
+### ¿Qué aprendiste que no habías comprendido completamente en la parte teórica?
+
+Aprendi a inplemetar un Framework de manera facil y a comprende un poco más el funcionamiento de npm 
+
+### ¿Por qué es importante estructurar bien un proyecto desde el inicio?
+
+Es muy importante estructurar bien un proyecto desde el inicio para poder escalarlo evitando frustracciones y ahorrando trabajo 
