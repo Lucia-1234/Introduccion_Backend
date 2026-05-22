@@ -74,7 +74,7 @@ La funcion del archivo package.json ayuda a la configuracion del proyecto, conti
 Al ejecutar npm install se descargan las librerías necesarias desde el registro oficial de npm, instala físicamente las dependencias en la carpeta node_modules, que contiene todo el código de terceros que tu proyecto necesita y genera el archivo package-lock.json creando o actualizando este archivo para registrar las versiones exactas de cada dependencia, garantizando que el proyecto sea reproducible en otros entornos.
 
 
-## Compresion del Servidor:
+## Compresion del Servidor
 ### ¿Qué significa que el servidor esté “escuchando” en un puerto?
 
 Significa que el servidor ha abierto ese puerto y está esperando solicitudes de clientes (navegadores, aplicaciones) cuando un cliente envía una petición a ese puerto, el servidor la recibe y la procesa.
@@ -82,3 +82,14 @@ Significa que el servidor ha abierto ese puerto y está esperando solicitudes de
 ### ¿Qué sucede internamente cuando accedes a http://localhost:3000/?
 
 El navegador interpreta localhost como la dirección IP 127.0.0.1, que apunta a tu propio equipo,  el navegador intenta establecer comunicación con el puerto 3000. Si el servidor está “escuchando” ahí, acepta la conexión, el navegador envía una petición GET a la ruta / del servidor,el navegador interpreta la respuesta y la muestra como página web.
+
+
+## Analisis de Rutas
+### ¿Qué diferencia existe entre cada ruta creada?
+
+La diferencia de las rutas es que cada una muestra informacion diferente dependiendo de lo que le corresponda 
+
+### ¿Qué papel cumplen los parámetros request y response?
+
+  Request: Contiene toda la información que el cliente envía al servidor.
+  Response: Permite al servidor enviar una respuesta al cliente
