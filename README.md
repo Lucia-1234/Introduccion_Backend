@@ -19,12 +19,16 @@ El paso a paso que realice fue:
   ```
     npm init -y
   ```
-5. Instalacion de Express
+5. Instalacion de librerias
+  ```
+    npm install 
+  ```
+6. Instalacion de Express
   ```
     npm install express
   ```
-6. Cree el archivo index. js 
-7. Configuracion del servidor 
+7. Cree el archivo index. js 
+8. Configuracion del servidor 
 
     • Importa el framework.
 
@@ -46,12 +50,12 @@ El paso a paso que realice fue:
       console.log(`Example app listening on port ${port}`)
     })
   ```
-10. Se cambio el scrip en packaje.json para poder ejecutar
+9. Se cambio el scrip en packaje.json para poder ejecutar
   ```
     npm run dev
   ```
 
-9. Se generaron las rutas 
+10. Se generaron las rutas 
 
     • / → Mensaje de bienvenida.
 
